@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                <center>Registration Form</center>
+            </h2>
+        </div>
+
+        <form id="login" class="form">
+            <div class="form-control">
+                <img src="img/user.png" alt="" srcset="">
+                <lable for="username" name="username">User Name</lable>
+                <input id="txtUserName" type="text" placeholder="Enter your name" name="username" required />
+            </div>
+            <div class="form-control">
+                <img src="img/email.png" alt="" srcset="">
+                <lable for="email" name="email">Email</lable>
+                <input id="txtEmail" type="email" placeholder="asha456@gmail.com" name="email" required />
+            </div>
+            <div class="form-control">
+                <img src="img/birthday.png" alt="" srcset="">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" min="1968-01-01" max="2006-01-01" required>
+            </div>
+            <div class="form-control">
+                <img src="img/padlock.png" alt="" srcset="">
+                <lable for="pwd" name="pwd">Password</lable>
+                <input id="txtPwd" type="password" placeholder="******" name="pwd" required />
+            </div>
+            <div class="form-control">
+                <img src="img/reset-password.png" alt="" srcset="">
+                <lable for="conpwd" name="conpwd">Confirm Password</lable>
+                <input id="txtConPwd" type="password" placeholder="******" name="conpwd"required />
+            </div>
+            <div>
+                <input type="checkbox" id="chkbtn" required> <label for="chkbtn">Accept Terms & Conditions</label>
+            </div>
+            <div class="form-control">
+                <button id="submit" onclick="loginForm()" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <div id="user-entries">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

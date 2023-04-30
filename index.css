@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 93%, 24%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    margin:0;  
+}
+
+.container{
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    background-color: #d8d1d1;
+    padding: 10px 50px;
+    display: flex;
+}
+
+.form{
+    padding: 20px 40px;
+}
+
+
+.form-control{
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-control lable {
+    display: inline-block;
+    margin-bottom:5px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border:2px solid #e6a1a1;
+}
+
+.form-control.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+.form-control.error input{
+    border:2px solid rgb(228, 29, 22);
+}
+.form-control small{
+    position:absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+
+button{
+    background-color: hsl(233, 93%, 24%);
+    color:#fff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 30px;
+    border:2px solid rgb(4,4,95);
+    cursor: pointer;
+}
+
+#user-entries{
+    width: 50%;
+}
+
+table,tr,th,td{
+    border: 2px solid #d8d1d1;
+    border-collapse: collapse;
+    color: #fff;
+    text-align: center;
+}
+
+table th{
+    background-color: #e6a1a1;
+    color: rgb(4,4,95);
+}
+
+table{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+table th,td{
+    width: 150px;
+    height: 40px;
+}
+
+form div img{
+    height: 15px;
+}
